@@ -6,8 +6,8 @@ lang: en-US
 
 baseurl: "/"
 url: https://rzvxa.com/
-git_address: https://github.com/rzvxa/rzvxa.com
-git_edit_address: https://github.com/rzvxa/rzvxa.com
+git_address: https://github.com/rzvxa/rzvxa.github.io
+git_edit_address: https://github.com/rzvxa/rzvxa.github.io
 
 markdown: kramdown
 highlighter: rouge
