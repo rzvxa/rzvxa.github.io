@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // constants
   const COLOR = !DEBUG ? "#282828FF" : "red";
   const HEIGHT_RATIO = 1 / 6;
-  const PIXEL_RATIO = window.devicePixelRatio || 1;
+  const PIXEL_RATIO = 1 || window.devicePixelRatio || 1;
   const SCROLL_THREASHOLD = 0.01;
   const SCROLL_STEP = 0.35;
   const SCROLL_SPEED = 0.35;
@@ -96,12 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // immutable variables
-  const tileset = generateTileset();
   const content = document.querySelector(".content");
   const [head, headCtx] = selectCanvas(".glitch-canvas.head");
   const [tail, tailCtx] = selectCanvas(".glitch-canvas.tail");
 
   // mutable variables
+  let tileset = generateTileset();
   let buffers = [];
   let scrollTop = getScrollTop();
   let scrollVal = scrollTop;
@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gridx = floor(canvasWidth / unit.width);
     gridy = floor(canvasHeight / unit.height);
 
+    tileset = generateTileset();
     buffers = generateBuffers(gridy, gridx);
   };
 
@@ -179,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     dy = dy * SCROLL_SPEED;
     const unit = getUnit();
     const scale = unit.width;
-    const size = content.offsetWidth / unit.width;
+    const size = canvasWidth / unit.width;
     ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
     const height = gridy;

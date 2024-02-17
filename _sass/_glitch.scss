@@ -4,17 +4,17 @@
 
   &.head {
     top: 0;
-    margin-top: -1rem;
+    margin-top: -1em;
   }
 
   &.tail {
     bottom: 0;
-    margin-bottom: -1rem;
+    margin-bottom: -1em;
   }
 }
 .glitch-measure {
   opacity: 0;
   padding: 0;
   margin: 0;
-  line-height: 1rem;
+  line-height: 1em;
 }
