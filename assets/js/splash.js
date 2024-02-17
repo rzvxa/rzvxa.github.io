@@ -65,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   document.body.style.overflow = "hidden";
   document.body.style.pointerEvents = "none";
+});
+
+window.addEventListener("load", function () {
+  const content = document.querySelector(".content");
 
   setTimeout(() => {
     document.body.style.overflow = "auto";
@@ -82,4 +86,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
   fx1.setText("Ali&nbsp;");
   fx2.setText("Rez");
   fx3.setText("vani");
+
+  content.classList.add("splash-play");
 });
