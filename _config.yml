@@ -1,0 +1,32 @@
+title: Ali Rezvani
+email: rzvxa@protonmail.com
+description: >
+  And I'm not yet another \"programmer\"!
+lang: en-US
+
+baseurl: "/"
+url: https://rzvxa.com/
+git_address: https://github.com/rzvxa/rzvxa.com
+git_edit_address: https://github.com/rzvxa/rzvxa.com
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .gitignore
+  - README.md
+  - vendor
+timezone: America/New_York
+
+defaults:
+- scope:
+    path: _resume
+    type: resume
+  values:
+    layout: article
+
+collections:
+  resume:
+    permalink: /:collection/:name/

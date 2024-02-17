@@ -1,0 +1,174 @@
+---
+---
+
+@charset "utf-8";
+
+@import "variables", "fonts", "common", "splash", "glitch", "nes", "syntax_highlighting";
+
+:root {
+	font-size: 22px;
+}
+
+body {
+	position: relative;
+	font-family: "pixel", monospace;
+	font-size: 1rem;
+	font-smoothing: antialiased;
+	font-weight: normal;
+	background-color: $bg;
+	color: $fg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	position: relative;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin-bottom: 1rem;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 4rem;
+	color: $yellow;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.2rem;
+	color: $yellow;
+}
+
+h5 {
+	color: $blue;
+}
+
+h6 {
+	color: $gray;
+}
+
+p {
+	margin: 0 0 1rem;
+}
+
+strong {
+	color: $green;
+}
+
+code {
+	font-family: "pixel";
+	font-size: 0.8rem;
+}
+
+pre.highlight {
+	overflow: scroll;
+}
+
+a {
+	position: relative;
+	display: inline-block;
+	color: $aqua;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&::before {
+		content: "[";
+	}
+	&::after {
+		content: "]";
+	}
+
+	&.button {
+		color: $fg1;
+		padding: 1rem 1ch;
+		margin: 1rem 0;
+
+		&::before {
+			display: block;
+			position: absolute;
+			left: 1px;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			background-color: $dark_aqua;
+			margin-left: -0.6rem;
+			padding: 1rem 1ch;
+			z-index: -1;
+		}
+	}
+}
+
+section {
+	margin-bottom: 4rem;
+	> .title {
+		color: $gray;
+		text-align: left;
+	}
+}
+
+article {
+	position: relative;
+	padding: 2rem;
+	margin-bottom: 4rem;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 1px;
+		top: 1px;
+		bottom: 1px;
+		right: 1px;
+		margin-right: 1ch;
+		border: 0.5ch solid $blue;
+		box-shadow: 1ch 1rem 0 $blue;
+		z-index: -1;
+	}
+
+	> .title {
+		display: inline;
+		box-shadow: inset 0 -1px 0 $bg, inset 0 -0.5rem 0 $yellow;
+		margin-bottom: 15px;
+	}
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	> .content {
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+		max-width: 550px;
+		transform: skewY(-3deg);
+
+		> .hero {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: fit-content;
+		}
+	}
+}

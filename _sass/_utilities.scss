@@ -1,0 +1,3 @@
+@function as-rgb($color) {
+	@return "rgb(#{red($color), green($color), blue($color)})";
+}

@@ -1,0 +1,83 @@
+.content {
+	--splash-duration: 3.5s;
+	--splash-logo-float: 2.7s;
+}
+
+.splash-logo-container {
+	position: relative;
+	z-index: 101;
+	display: flex;
+}
+
+.splash-shroud {
+	opacity: 0;
+	animation: fade-in 1s linear var(--splash-duration);
+	animation-fill-mode: forwards;
+}
+
+.splash-logo-container-anim {
+	opacity: 1;
+	top: 30vh;
+	transform: skewY(3deg);
+	animation: float-up 1s ease-out var(--splash-logo-float), skew-logo 0.3s linear var(--splash-duration);
+	animation-fill-mode: forwards;
+
+	> .typo-logo {
+		height: 4rem;
+		margin-bottom: 4rem;
+		text-align: center;
+		font-size: 3.3rem;
+		border: none;
+		&.second {
+			animation: rez-block 0.6s linear 1.5s;
+			animation-fill-mode: forwards;
+		}
+		&.third {
+			width: 0%;
+		}
+	}
+}
+
+// animations
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes float-up {
+	0% {
+		top: 30vh;
+	}
+	50% {
+		top: 0vh;
+	}
+	100% {
+		top: 0vh;
+	}
+}
+
+@keyframes skew-logo {
+	0% {
+		-webkit-transform: skewY(3deg);
+		transform: skewY(3deg);
+	}
+	100% {
+		-webkit-transform: skewY(0deg);
+		transform: skewY(0deg);
+	}
+}
+
+@keyframes rez-block {
+	0% {
+		color: $fg;
+		background-color: none;
+	}
+	100% {
+		color: $bg;
+		background-color: $fg;
+	}
+}

@@ -1,0 +1,37 @@
+@import "_utilities";
+
+/* From nes.css */
+.nes-progress {
+  $my_color: $dark_aqua;
+  border-image-slice: 2;
+  border-image-width: 6;
+  border-image-repeat: stretch;
+  border-image-source: url('data:image/svg+xml;utf8,<?xml version="1.0" encoding="UTF-8" ?><svg version="1.1" width="5" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2 1 h1 v1 h-1 z M1 2 h1 v1 h-1 z M3 2 h1 v1 h-1 z M2 3 h1 v1 h-1 z" fill="#{as-rgb($my_color)}" /></svg>');
+  border-image-outset: 2;
+  width: 90%;
+  height: 25px;
+  margin: 4px;
+  color: $my_color;
+  background-color: $bg;
+  -webkit-appearance: none;
+  appearance: none;
+  border-image-outset: 10px;
+
+  &::-webkit-progress-value {
+    background-color: $my_color;
+  }
+  &::-moz-progress-bar {
+    background-color: $my_color;
+  }
+  &::-ms-fill {
+    background-color: $my_color;
+    border: none;
+  }
+}
+
+.nes-progress-text {
+  color: $fg;
+  position: relative;
+  bottom: 1.35rem;
+  text-align: center;
+}
