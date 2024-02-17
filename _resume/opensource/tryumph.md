@@ -52,4 +52,4 @@ Or
   consumeResult(res);
 ```
 
-<a class="button" href="https://www.npmjs.com/package/tryumph">View on NPM</a>
+<a class="button" href="https://www.npmjs.com/package/tryumph" target="_blank" rel="noopener noreferrer">View on NPM</a>

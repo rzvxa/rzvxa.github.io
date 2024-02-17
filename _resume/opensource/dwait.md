@@ -35,4 +35,4 @@ Or you can pass the function itself to the `dwait` function and get a deferred f
     .await; // or .toPromise();
 ```
 
-<a class="button" href="https://www.npmjs.com/package/tryumph">View on NPM</a>
+<a class="button" href="https://www.npmjs.com/package/tryumph" target="_blank" rel="noopener noreferrer">View on NPM</a>

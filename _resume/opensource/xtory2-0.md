@@ -10,4 +10,4 @@ in __TypeScript__ This reincarnation of __Xtory__ contains a plugin system for
 adding custom code to the application itself, For new Flows, Engine Integration, Custom Outputs
 and anything else that is needed for your pipeline.
 
-<a class="button" href="https://github.com/rzvxa/xtory">View On Github</a>
+<a class="button" href="https://github.com/rzvxa/xtory" target="_blank" rel="noopener noreferrer">View On Github</a>

@@ -27,4 +27,4 @@ binds in edit mode or playing.
 It also has a __Localization Service__ supporting both __JSON__
 and __CSV__ files as a translation table.
 
-<a class="button" href="https://github.com/rzvxa/MVVM">View On Github</a>
+<a class="button" href="https://github.com/rzvxa/MVVM" target="_blank" rel="noopener noreferrer">View On Github</a>

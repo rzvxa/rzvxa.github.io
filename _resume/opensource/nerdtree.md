@@ -8,4 +8,4 @@ The NERDTree is a file system explorer for the Vim editor. Using this plugin, us
 
 I'm currently the sole maintainer of this project, Although it is in a stable state and doesn't need much attention.
 
-<a class="button" href="https://github.com/preservim/nerdtree">View on Github</a>
+<a class="button" href="https://github.com/preservim/nerdtree" target="_blank" rel="noopener noreferrer">View on Github</a>

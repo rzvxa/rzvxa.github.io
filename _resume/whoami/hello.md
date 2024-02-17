@@ -10,4 +10,4 @@ I found programming interesting at the age of 14 with __VB6__ but soon enough I 
 
 All of my work experiences are not included on my LinkedIn, but anyway, I'd love to have you check that out.
 
-<a class="button" href="https://www.linkedin.com/in/alirzvani">View My Linkedin</a>
+<a class="button" href="https://www.linkedin.com/in/alirzvani" target="_blank" rel="noopener noreferrer">View My Linkedin</a>
